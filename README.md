@@ -1,7 +1,7 @@
 # react-redux-just
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/49643329/98297767-f4bd5800-1fc5-11eb-93dd-9d21bec085b4.png" />
+  <img src="https://user-images.githubusercontent.com/49643329/98299781-4d422480-1fc9-11eb-859a-795c566718e8.png" />
 </p>
 
 
@@ -18,7 +18,7 @@
 ------
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/49643329/98298270-ca1fcf00-1fc6-11eb-8a26-35b3623b8690.png" />
+  <img src="https://user-images.githubusercontent.com/49643329/98299774-4b786100-1fc9-11eb-9393-1cf74d73ade9.png" />
 </p>
 
 ------
