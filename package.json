@@ -1,6 +1,6 @@
 {
   "name": "react-redux-just",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy access to your storage",
   "main": "index.js",
   "directories": {
@@ -24,15 +24,14 @@
     "url": "https://github.com/mlotekv/react-redux-just/issues"
   },
   "homepage": "https://github.com/mlotekv/react-redux-just#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "react": "^16.14.0",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0"
-  },
-  "devDependencies": {
+    "redux-thunk": "^2.3.0",
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.5.4",
     "@babel/plugin-proposal-class-properties": "^7.7.0",
