@@ -1,0 +1,57 @@
+{
+  "name": "react-redux-just",
+  "version": "1.0.0",
+  "description": "Easy access to your storage",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlotekv/react-redux-just.git"
+  },
+  "keywords": [
+    "react",
+    "react-redux",
+    "redux"
+  ],
+  "author": "mlotekv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlotekv/react-redux-just/issues"
+  },
+  "homepage": "https://github.com/mlotekv/react-redux-just#readme",
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/plugin-transform-react-constant-elements": "^7.12.1",
+    "@babel/plugin-transform-react-jsx": "^7.12.5",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
+    "@babel/runtime": "^7.5.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "jest-dom": "^4.0.0",
+    "react-scripts": "3.4.3",
+    "react-test-renderer": "^17.0.1",
+    "typescript": "^4.0.5"
+  }
+}

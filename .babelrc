@@ -1,0 +1,39 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": "IE 11"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        "@babel/plugin-transform-runtime",
+        [
+          "@babel/plugin-proposal-class-properties",
+          {
+            "loose": true
+          }
+        ]
+      ]
+    },
+    "test": {
+      "plugins": [
+        "@babel/plugin-syntax-jsx",
+        "@babel/plugin-transform-runtime",
+                "@babel/plugin-transform-react-jsx",
+        "@babel/plugin-transform-react-constant-elements",
+        [
+          "@babel/plugin-proposal-class-properties",
+          {
+            "loose": true
+          }
+        ]
+      ]
+    }
+  }
+}
