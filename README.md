@@ -1,9 +1,8 @@
 # react-redux-just
-<!-- https://github.com/STRML/react-draggable/blob/master/README.md
-https://github.com/OlgaVlasova/markdown-doc/blob/master/README.md
-https://www.npmjs.com/package/redux-toolbelt -->
 
-<!-- https://codesandbox.io/s/jolly-frog-oi6dp?file=/src/index.js -->
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/49643329/98297767-f4bd5800-1fc5-11eb-93dd-9d21bec085b4.png" />
+</p>
 
 
 - Get easy access to your storage.
@@ -19,7 +18,7 @@ https://www.npmjs.com/package/redux-toolbelt -->
 ------
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/49643329/98283628-fa5c7300-1fb0-11eb-8a68-05c573ed74e6.png" />
+  <img src="https://user-images.githubusercontent.com/49643329/98298270-ca1fcf00-1fc6-11eb-8a26-35b3623b8690.png" />
 </p>
 
 ------
@@ -34,13 +33,13 @@ https://www.npmjs.com/package/redux-toolbelt -->
   - [Requests](#requests)
 - [More actions](#more-actions)
 
-### Installing
+## Installing
 
 ```bash
 $ npm install react-redux-just
 ```
 
-### Usage
+## Usage
 
 Create a provider at the beginning of your application.
 
@@ -57,12 +56,14 @@ ReactDOM.render(
   document.getElementById('root'));
 ```
 
-Use `withConnectStore` to connect to the store.
 
-Specify in the argument the `component` and the element you want to monitor.
+
+### `withConnectStore(component, model)`
+
+Use `withConnectStore` to connect to the store.
+Specify in the argument the component and the element you want to monitor.
 
 ```js
-import React from 'react'
 import { withConnectStore } from 'react-redux-just'
 
 function App({ user }) {
@@ -90,7 +91,9 @@ function Component({ user, date, version }) (
 export default withConnectStore(Component, ['user','date.start:date','version'])
 ```
 
-### Initial stores
+
+
+## Initial stores
 
 You can create a data model for Initial Values.
 
@@ -196,11 +199,11 @@ const mapModelToProps = {
 export default withConnectStore(Component, mapModelToProps )
 ```
 
-### Options
+## Options
 
 ### `__options` and other possibilities in the `mapModelToProps`
 
-#### rename
+#### Rename
 Rename the parameters for the current component
 
 ```js
@@ -222,7 +225,7 @@ const mapModelToProps = {
 export default withConnectStore(Component, mapModelToProps )
 ```
 
-#### dispatch
+#### dispatch(next, prov, options)
 Calling handlers on change
 
 Using the `dispatch` option Create a handler that will be called before changes in the store
@@ -247,7 +250,7 @@ Specify your options and use them in the handler
 
 Coming handler arguments: new value, previous value, options
 
-#### receiving
+#### receiving(value)
 Create an `receiving` handler, before the variable gets into the component, it will go through the handler. The store will not change
 
 ```js
@@ -269,7 +272,7 @@ export default withConnectStore(Component, mapModelToProps )
 
 You can also create handlers when initializing a state
 
-#### requests
+#### `requests(new Promise)`
 
 Create a data request with ease
 
@@ -322,7 +325,7 @@ export default withConnectStore(Component, 'date' )
 
 ### More actions
 
-#### `set[Name]Callbacks`
+#### `set[Name]Callbacks(next=>{}, [])`
 
 In addition to change, callbacks, replacements and cleanup are also available.
 
@@ -347,10 +350,10 @@ function Component({ date, login, setLogin, setLoginCallback }) {
 export default withConnectStore(Component, ['login', 'date'] )
 ```
 
-#### `set[Name].replace`
+#### `set[Name].replace(newValue)`
 Replaces an object or parameter with a new value
 #### `set[Name].clear`
-Clears the object
+
 
 |type        | new value |
 |------------|-----------|
@@ -367,32 +370,26 @@ Clears the object
 
 ```js
   setStyle({  height:100, fontSize: 10, marginLeft:15 })
-  // state = {
   //   style:{
   //     height: 100
   //     marginLeft: 10,
   //     fontSize: 10,
   //   }
-  // }
 ```
 ```js
   setStyle({  marginLeft:15, marginRight: 15  })
-  // state = {
   //   style:{
   //     height: 100
   //     marginLeft: 15,
   //     fontSize: 10,
   //     marginRight:15
-  //   }
   // }
   ```
   ```js
   setStyle.replace({ height: 100,  fontSize: 10 })
-  // state = {
   //   style:{
   //     height: 100
   //     fontSize: 10,
-  //   }
   // }
   ```
   ```js
@@ -403,10 +400,7 @@ Clears the object
   ```
   ```js
   setStyle.delete()
-  // state = {
   //   style: undefined
-  // }
-
 
 ```
 
