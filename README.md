@@ -15,13 +15,11 @@
 
 - Light callbacks when changing within a component.
 
-------
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/49643329/98299774-4b786100-1fc9-11eb-9393-1cf74d73ade9.png" />
 </p>
 
-------
 
 
 - [Installing](#installing)
